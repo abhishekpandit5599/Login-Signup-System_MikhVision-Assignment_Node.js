@@ -90,7 +90,7 @@ app.get("/logout", authenticateUser, (req, res) => {
   res.redirect("/login");
 });
 
-// server config
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server started listening on port: ${PORT}`);
